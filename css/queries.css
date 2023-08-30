@@ -1,0 +1,1132 @@
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* ***************************
+/* BELOW 1344PX (smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem;
+  }
+
+  .divider-container {
+    max-width: 120rem;
+  }
+
+  .section-divider {
+    height: 18rem;
+  }
+
+  .divider-img {
+    height: 16rem;
+  }
+
+  .quote-container {
+    max-width: 120rem;
+  }
+
+  .wrapper {
+    max-width: 120rem;
+  }
+
+  .container-album {
+    max-width: 120rem;
+  }
+
+  .comics-container {
+    max-width: 120rem;
+  }
+
+  .mySlides {
+    border-radius: 0;
+  }
+
+  .serv-bar,
+  .forehand-bar,
+  .backhand-bar,
+  .volley-bar,
+  .consistency-bar,
+  .stamina-bar {
+ font-weight: 700;
+ color: #123c1c;
+  }
+
+  .overall-bar {
+    font-weight: 700;
+  }
+
+}
+
+/* ***************************
+/* BELOW 1200PX (Landscape Tablets) */
+/*****************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-divider {
+    height: 16rem;
+  }
+
+  .divider-img {
+    height: 14rem;
+  }
+
+  .title-stars {
+    height: 2.8rem;
+  }
+
+  .card-stars {
+    height: 2rem;
+  }
+}
+
+/* ***************************
+/* BELOW 1000PX */
+/*****************************/
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-stars {
+    height: 3.6rem;
+  }
+
+  .stars {
+    height: 2.4rem;
+  }
+
+  .hero-container {
+    max-width: 110rem;
+  }
+
+  .section-divider {
+    height: 14rem;
+  }
+
+  .divider-img {
+    height: 12rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 7.4rem;
+  }
+
+  .quote-container {
+    padding: 7.4rem 0rem;
+    max-width: 110rem;
+  }
+
+  .wrapper {
+    max-width: 110rem;
+    padding: 7.4rem 0 12rem 0;
+  }
+
+  .main-box {
+    width: 80rem;
+  }
+
+  .container-album {
+    padding: 12rem 2rem 3.2rem 2rem;
+  }
+
+  .slideshow-container {
+    max-width: 70rem;
+  }
+
+  .dot {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .footer-container {
+    max-width: 110rem;
+    gap: 2.4rem;
+  }
+
+  .player-skull {
+    height: 6.4rem;
+  }
+}
+
+/* ***************************
+/* BELOW 800PX */
+/*****************************/
+
+@media (max-width: 50em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .icon-mobile-nav {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .logo {
+    height: 4.8rem;
+  }
+
+  .icon-mobile-nav {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 13.2rem;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translatex(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    background-color: white;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 0.9;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translatex(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    text-align: center;
+    flex-direction: column;
+    margin-top: -30rem;
+    gap: 3.6rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .section-hero {
+    border-bottom: 1px solid white;
+  }
+
+  .hero-container {
+    max-width: 70rem;
+  }
+
+  .section-divider {
+    border-bottom: 1px solid #fff;
+    height: 10rem;
+  }
+
+  .divider-img {
+    height: 8rem;
+  }
+
+  .section-team {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .section-quote {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .quote-container {
+    padding: 7.4rem 0 2.2rem 0;
+    max-width: 70rem;
+  }
+
+  .quote-text {
+    font-size: 2.4rem;
+  }
+
+  .quote-author {
+    font-size: 2rem;
+  }
+
+  .section-titles {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .wrapper {
+    padding: 4.8rem 0 9.8rem 0;
+  }
+
+  .main-box {
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0 0.2rem 2rem rgb(255, 255, 255);
+  }
+
+  .box {
+    height: 30rem;
+    padding: 0 2rem;
+  }
+
+  .box-active h2 {
+    left: 01rem;
+  }
+
+  .product img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .one {
+    width: 75% !important;
+    height: 12.5rem;
+  }
+
+  .two {
+    width: 70% !important;
+    height: 12.5rem;
+  }
+
+  .three {
+    width: 80% !important;
+    height: 12.5rem;
+  }
+
+  .title-detail .img-title {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  .section-album {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .container-album {
+    padding: 9.6rem 2rem 2rem 2rem;
+  }
+
+  .slideshow-container {
+    max-width: 50rem;
+    box-shadow: 0 0.2rem 2rem rgb(255, 255, 255);
+  }
+
+  .dot {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .comics-container {
+    row-gap: 4.8rem;
+    column-gap: 4.8rem;
+    padding: 6.2rem;
+  }
+
+  .footer {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .card-stars {
+    height: 1.8rem;
+  }
+
+  .player-info {
+    width: 40rem;
+  }
+
+  .player-skull {
+    height: 6rem;
+  }
+}
+
+/* ***************************
+/* BELOW 600PX */
+/*****************************/
+
+@media screen and (max-width: 37.5em) and (orientation: portrait) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .section-team {
+    background-color: #222;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    padding: 4.8rem;
+  }
+
+  .section-titles {
+    background-color: #222;
+  }
+
+  .main-box {
+    width: 50rem;
+  }
+
+  .slideshow-container {
+    max-width: 45rem;
+  }
+
+  .dot {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .section-album {
+    background-color: #123c1c;
+  }
+
+  .comics-container {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #222;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+
+  .card {
+    width: 45rem;
+  }
+
+  .player-skull {
+    height: 5.2rem;
+    top: -7.4rem;
+    left: 4.8rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .comics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .nav-col {
+    display: none;
+  }
+}
+
+/* ***************************
+/* BELOW 500PX */
+/*****************************/
+
+@media screen and (max-width: 31.25em) and (orientation: portrait) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .logo {
+    height: 4.4rem;
+  }
+
+  .nav-stars {
+    height: 3rem;
+  }
+
+  .stars {
+    height: 1.8rem;
+  }
+
+  .main-nav {
+    top: 12.6rem;
+  }
+
+  .hero-container {
+    padding-top: 12rem;
+  }
+
+  .section-divider {
+    height: 8rem;
+  }
+
+  .divider-img {
+    height: 6rem;
+  }
+
+  .gallery {
+    padding: 3.2rem;
+  }
+
+  .quote-container {
+    padding: 4rem 0rem;
+  }
+
+  .img-container {
+    padding-bottom: 0rem;
+  }
+
+  .quote-text {
+    font-size: 2.2rem;
+    padding: 2rem 9.6rem 2rem 3rem;
+  }
+
+  .quote-text::before,
+  .quote-text::after {
+    font-size: 7.2rem;
+    margin: -2rem 0 0 -4rem;
+  }
+
+  .quote-text::after {
+    content: "”";
+    margin: -2rem -4rem 2rem 0.5rem;
+  }
+
+  .quote-author {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    padding: 1.8rem 0 6.5rem 0;
+  }
+
+  .main-box {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .box {
+    height: 20rem;
+    padding: 0 2rem;
+  }
+
+  .box-active h2 {
+    left: 0.5rem;
+  }
+
+  .product img {
+    width: 100%;
+    height: 12.5rem;
+  }
+
+  .container-album {
+    padding-top: 7.4rem;
+  }
+
+  .slideshow-container {
+    max-width: 40rem;
+  }
+
+  .dot {
+    height: 0.75rem;
+    width: 0.75rem;
+    margin: 0rem 0.5rem 4.8rem 0;
+  }
+
+  .comics-container {
+    row-gap: 2.8rem;
+    column-gap: 2.8rem;
+    padding: 4.8rem;
+  }
+
+  .footer {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .footer-logo {
+    margin-bottom: 2rem;
+  }
+
+  .footer-heading {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 35rem;
+  }
+
+  .title-stars {
+    height: 2rem;
+  }
+
+  .card-stars {
+    height: 1.4rem;
+  }
+
+  .dot {
+    margin-top: 0;
+    margin-bottom: 4.8rem;
+  }
+
+  .player-skull {
+    height: 4rem;
+    top: -10rem;
+    left: 3.6rem;
+  }
+
+  .player-info {
+    width: 30rem;
+  }
+
+  .performance-container {
+    font-size: 1.8rem;
+  }
+
+  .percent {
+    height: 2.5rem;
+  }
+
+  .developed,
+  .copyright,
+  .contacts,
+   .contacts .footer-link {
+    font-size: 1.8rem;
+  }
+
+
+}
+  /* ***************************
+/* BELOW 400PX */
+/*****************************/
+
+@media screen and (max-width: 25em) and (orientation: portrait) {
+  html {
+    font-size: 25%;
+  }
+
+  .main-nav {
+    margin-top: 0rem;
+  }
+
+  .main-nav-list {
+    margin-top: -20rem;
+    gap: 2.4rem;
+  }
+
+  .nav {
+    height: 7rem;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    height: 3.6rem;
+  }
+
+  .nav-stars {
+    height: 2.6rem;
+  }
+
+  .stars {
+    height: 1.6rem;
+  }
+
+  .main-nav {
+    top: 9.6rem;
+  }
+
+  .hero-container {
+    padding-top: 8rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    padding: 5.2rem 2rem 4rem 2rem;
+  }
+
+  .section-divider {
+    height: 5rem;
+  }
+
+  .divider-img {
+    height: 4.5rem;
+  }
+
+  .gallery {
+    gap: 1.6rem;
+    padding: 3.6rem;
+  }
+
+  .quote-container {
+    padding: 4rem 0rem;
+  }
+
+  .img-container {
+    padding-bottom: 0rem;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+    padding: 2rem 4.8rem 2.4rem 2rem;
+  }
+  .quote-img {
+    padding-left: 4rem;
+  }
+
+  .quote-text::before,
+  .quote-text::after {
+    font-size: 4.8rem;
+    margin: -1rem 0 0 -2rem;
+  }
+
+  .quote-text::after {
+    content: "”";
+    margin: -1rem -4rem 2rem 0.5rem;
+  }
+
+  .quote-author {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    padding: 0rem 0 5rem 0;
+  }
+
+  .main-box {
+    width: 30rem;
+    height: 15rem;
+  }
+
+  .box {
+    height: 15rem;
+    padding: 0 2rem;
+  }
+
+  .box-active h2 {
+    left: -0.5rem;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .product img {
+    width: 100%;
+    height: 8.5rem;
+  }
+
+  .container-album {
+    padding-top: 4.8rem;
+  }
+
+  .slideshow-container {
+    max-width: 25rem;
+  }
+
+  .dot {
+    height: 0.3rem;
+    width: 0.3rem;
+    margin: 0rem 0.4rem 2rem 0;
+  }
+
+  .comics-container {
+    row-gap: 2rem;
+    column-gap:3rem;
+    padding: 3.6rem;
+  }
+
+
+  .card {
+    width: 27.5rem;
+  }
+
+  .title-stars {
+    height: 1.8rem;
+  }
+  
+  .card-stars {
+    height: 1.4rem;
+  }
+
+  .player-info {
+    width: 22.5rem;
+  }
+
+  .dot-player {
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .info-title {
+    font-size: 2rem;
+  }
+
+  .performance-container {
+    font-size: 2rem;
+  }
+
+  .percent {
+    height: 2.2rem;
+  }
+}
+
+
+
+  /* .category,
+  .performance {
+    max-width: 40%;
+  }
+
+  .performance {
+    margin-left: 1rem;
+  }
+
+  .player-skull {
+    height: 5.2rem;
+    top: -7.4rem;
+    left: 4.8rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .player-info {
+    justify-self: center;
+    width: 100%;
+  } */
+
+  /* .section-team {
+    background-color: #222;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    padding: 4.8rem;
+  }
+
+  .section-titles {
+    background-color: #222;
+  }
+
+  .main-box {
+    width: 60rem;
+  }
+
+  .slideshow-container {
+    max-width: 50rem;
+  }
+
+  .dot {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .section-album {
+    background-color: #123c1c;
+  }
+
+  .slideshow-container {
+  }
+
+  .comics-container {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #222;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+
+  .card {
+    width: 45rem;
+  }
+
+  .category,
+  .performance {
+    max-width: 40%;
+  }
+
+  .performance {
+    margin-left: 0;
+  }
+
+  .player-skull {
+    height: 4.8rem;
+    top: -7.4rem;
+    left: 4.8rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .player-info {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .nav-col {
+    display: none;
+  } */
+}
+
+/*****************************/
+/* Fixing Safari Flexbox Gap */
+/*****************************/
+
+.no-flexbox-gap .products .product:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .category span:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.no-flexbox-gap .performance p:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
+
+/* .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .icon-mobile-nav {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .logo {
+    height: 4.8rem;
+  }
+
+  .icon-mobile-nav {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 13.2rem;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translatex(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    background-color: white;
+
+    /* 1) Hide it visually */
+/* opacity: 0; */
+
+/* 2) Make it unaccessible to mouse and keyboard */
+/* pointer-events: none; */
+
+/* 3) Hide it from screen readers */
+/* visibility: hidden;
+    z-index: 9999;
+  } */
+
+/* .nav-open .main-nav {
+    opacity: 0.9;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translatex(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    text-align: center;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .section-hero {
+    border-bottom: 1px solid white;
+  }
+
+  .hero-container {
+    max-width: 70rem;
+  }
+
+  .section-divider {
+    border-bottom: 1px solid #fff;
+    height: 10rem;
+  }
+
+  .divider-img {
+    height: 8rem;
+  }
+
+  .section-team {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .section-quote {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .quote-container {
+    padding: 7.4rem 0 2.2rem 0;
+    max-width: 70rem;
+  }
+
+  .quote-text {
+    font-size: 2.4rem;
+  }
+
+  .quote-author {
+    font-size: 2rem;
+  }
+
+  .section-titles {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .wrapper {
+    padding: 4.8rem 0 9.8rem 0;
+  }
+
+  .main-box {
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0 0.2rem 2rem rgb(255, 255, 255);
+  }
+
+  .box {
+    height: 30rem;
+    padding: 0 2rem;
+  }
+
+  .box-active h2 {
+    left: 01rem;
+  }
+
+  .product img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .one {
+    width: 75% !important;
+    height: 12.5rem;
+  }
+
+  .two {
+    width: 70% !important;
+    height: 12.5rem;
+  }
+
+  .three {
+    width: 80% !important;
+    height: 12.5rem;
+  }
+
+  .title-detail .img-title {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  .section-album {
+    border-bottom: 1px solid #f8f9fa;
+  }
+
+  .container-album {
+    padding: 9.6rem 2rem 2rem 2rem;
+  }
+
+  .slideshow-container {
+    max-width: 50rem;
+  }
+
+  .dot {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .comics-container {
+    row-gap: 4.8rem;
+    column-gap: 4.8rem;
+    padding: 6.2rem;
+  } */
+/* } */
+
+/*****************************/
+/* Fixing Safari Flexbox Gap */
+/*****************************/
+
+.no-flexbox-gap .products .product:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .category span:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.no-flexbox-gap .performance p:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
